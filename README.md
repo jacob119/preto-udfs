@@ -30,10 +30,16 @@ The details about how to plug in presto UDFs can be found [here](https://www.qub
 | _ver 0.142_      | udfs-1.0.0 |
 | _ver 0.119_      | udfs-0.1.3 |
 
+
 ## Implemented User Defined Functions
 The repository contains the following UDFs implemented for Presto :
 
 #### HIVE UDFs
+* **WilcoxTest Functions**
+ 1. Recently, I added a new function as WilcoxText based on Prest UDFS.(Only for study)
+    ex) wilcox_test(array[], array[])
+ 2. You should find the class of WilcoxTest easily.
+ 
 * **DATE-TIME Functions**
  1. **to_utc_timestamp(timestamp, string timezone) -> timestamp** <br />
       Assumes given timestamp is in given timezone and converts to UTC (as of Hive 0.8.0). For example, to_utc_timestamp('1970-01-01 00:00:00','PST') returns 1970-01-01 08:00:00.
